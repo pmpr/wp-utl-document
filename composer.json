@@ -1,0 +1,34 @@
+{
+  "name": "pmpr-utl/wp-utl-document",
+  "type": "project",
+  "license": "proprietary",
+  "description": "Document Utility for Pmpr Components",
+  "keywords": [
+    "document",
+    "pdf",
+    "utility",
+    "wordpress",
+    "pmpr",
+    "package"
+  ],
+  "require": {
+    "php": ">=8.2",
+    "dompdf/dompdf": "3.0.0",
+    "pmpr-cmn/wp-cmn-foundation": "~1.4"
+  },
+  "prod-require": {
+    "php": "8.2",
+    "wordpress": "6.0",
+    "wp-cmn-foundation": "latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pmpr\\Utility\\Document\\": "src/Pmpr/Utility/Document"
+    },
+    "files": [
+      "index.php"
+    ]
+  },
+  "minimum-stability": "dev",
+  "tag": "1.0.1"
+}
